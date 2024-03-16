@@ -26,7 +26,7 @@ export default function OAuth() {
         }),
       });
       const data = await res.json();
-      console.log("Object3 --->",data)
+      // console.log("Object3 --->",data)
       dispatch(signInSuccess(data));
       navigate('/');
     } catch (error) {
